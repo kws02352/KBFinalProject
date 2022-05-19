@@ -1,0 +1,11 @@
+Ubuntu: 20.04
+CUDA: 11.0
+
+Torch Install code: pip install torch==1.7.1+cu110 torchvision==0.8.2+cu110 torchaudio==0.7.2 -f https://download.pytorch.org/whl/torch_stable.html
+
+e4e Install code: git clone https://github.com/omertov/encoder4editing.git $CODE_DIR
+
+ninja-build Install code:
+!wget https://github.com/ninja-build/ninja/releases/download/v1.8.2/ninja-linux.zip
+!sudo unzip ninja-linux.zip -d /usr/local/bin/
+!sudo update-alternatives --install /usr/bin/ninja ninja /usr/local/bin/ninja 1 --force

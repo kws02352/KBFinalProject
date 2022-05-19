@@ -1,0 +1,1230 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>KB Be:대면조</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="{% static 'assets/img/kb_favicon.png' %}" rel="icon">
+  <link href="{% static 'assets/img/kb_favicon.png' %}" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+  
+
+  <!-- Vendor CSS Files -->
+  <link href="{% static 'assets/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/boxicons/css/boxicons.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/glightbox/css/glightbox.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/remixicon/remixicon.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="{% static 'assets/css/style.css' %}" rel="stylesheet">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">></script>
+  <!-- 에약 제출 시 물어보기 / 제출 창 -->
+  <script>
+    function rsvChk(){
+      var result = confirm("예약을 진행하시겠습니까?");
+
+      if(result == true){
+        alert("예약이 완료되었습니다.");
+      }
+      else{
+        alert("예약이 취소되었습니다.");
+      }
+    }
+  <!-- loading start -->
+  function serviceSubmit(){
+  	var con = document.getElementById("loadingPage");
+    con.style.display = 'none';
+  	if(con.style.display=='none'){
+  		con.style.display = 'block';
+  	}
+  }
+  </script>
+  <!-- loading end --> 
+  <!-- =======================================================
+  * Template Name: Personal - v4.7.0
+  * Template URL: https://bootstrapmade.com/personal-free-resume-bootstrap-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+  <div id='loadingPage'>
+    <img src="{% static 'img/loading.gif' %}">
+    <p>변환중입니다. 약 20초가 소요됩니다.</p>
+  </div>
+  <!-- ======= Header ======= -->
+  <header id="header">
+    <div class="container">
+
+      <h1><a href="/">Change Your HairStyle</a></h1><br><br>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index.html" class="mr-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a> -->
+      <h2>
+        What if,<br><br>
+        Your HairStyle is<br><br>
+        <span id="dynamic" class="lg-text"></span>
+      </h2>
+      
+
+      
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link active" href="#header">Home</a></li>
+          <li><a class="nav-link" href="#about">About</a></li>
+          <li><a class="nav-link" href="#services">Service</a></li>
+          <!-- <li><a class="nav-link" href="#services">Analytics</a></li> -->
+          <li><a class="nav-link" href="#portfolio">Reservation</a></li>
+          <li><a class="nav-link" href="#contact">Contact Us</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+      <!-- <div class="social-links">
+        <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+        <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+        <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+        <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+      </div> -->
+      <br><br>
+      <div>
+        <!-- <button type="button" class="btn btn-success" style="background-color: #18d26e;">?쒖옉?섍린!</button> -->
+
+      </div>  
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= About Section ======= -->
+  <section id="about" class="about">
+
+    <!-- ======= About Me ======= -->
+    <div class="about-me container">
+
+      <div class="section-title">
+        <h2>Change your HairStyle</h2>
+        <p>헤어스타일 예측 서비스 with StyleClip</p>
+      </div>
+
+      <div class="row">
+
+        <!-- ?댁깋???ㅼ뼱?ㅽ????ъ쭊 + ?띿뒪??-->
+        <div class="col-lg-2" data-aos="fade-right" style ="text-align:center";>
+          <img src="" class="img-fluid" alt="">
+        </div>
+        
+        <div class="col-lg-4" data-aos="fade-right" style ="text-align:center";>
+          <img src="{% static 'assets/img/hairfit1.png' %}" class="img-fluid" alt="">
+        </div>
+        <div class="col-lg-4" data-aos="fade-right" style ="text-align:center";>
+          <img src="{% static 'assets/img/hairfit2.png' %}" class="img-fluid" alt="">
+        </div>
+
+        <div class="col-lg-2" data-aos="fade-right" style ="text-align:center";>
+          <img src="" class="img-fluid" alt="">
+        </div>
+
+        <div class="content" style ="text-align:center";>
+          <br>
+          <h2>스티커 사진같이 어색한, <br><br> 이런 헤어스타일 변환은 이제 그만.</h2>
+        </div>
+
+        <!-- ?먯뿰?ㅻ윭???ъ쭊怨??띿뒪??-->
+        <div class="col-lg-2" data-aos="fade-right" style ="text-align:center";>
+          <img src="" class="img-fluid" alt="">
+        </div>
+        
+        <div class="col-lg-3" data-aos="fade-right" style ="text-align:center";>
+          <img src="{% static 'assets/img/about_sh.png' %}" class="img-fluid" alt="" style="width:400px; height:400px;">
+        </div>
+        
+        <div class="col-lg-2" data-aos="fade-right" style ="text-align:center";>
+          <img src="" class="img-fluid" alt="">
+        </div>
+        
+        <div class="col-lg-3" data-aos="fade-right" style ="text-align:center";>
+          <img src="{% static 'assets/img/about_sh0.png' %}" class="img-fluid" alt="" style="width:400px; height:400px;">
+        </div>
+
+        <div class="col-lg-2" data-aos="fade-right" style ="text-align:center";>
+          <img src="" class="img-fluid" alt="">
+        </div>
+
+        <div class="content" style ="text-align:center";>
+          <h1>이것이 바로, <span style="color:#18d26e">딥러닝</span>의 기술력. </h1>
+        </div>
+
+        <!-- styleclip ?대?吏? ?ㅻ챸 -->
+       
+        <div class="col-lg-10" data-aos="fade-right" >
+          <img src="{% static 'assets/img/styleclip1.png' %}" class="img-fluid" alt="" style="width:800px; height:300px;">
+        </div>
+
+        <div class="col-lg-2" data-aos="fade-right">
+          <img src="" class="img-fluid" alt="">
+        </div>
+
+        <div class="content" style ="text-align:left";>
+          <h1>눈부시게 진보한 <span style="color:#18d26e">GAN</span> 으로,<br><br>더욱 <span style="color:#18d26e">생생하게</span> </h1>
+        </div>
+
+        <!-- FFHQ ?대?吏? ?ㅻ챸 -->
+        <div class="col-lg-5" data-aos="fade-right" style ="text-align:center";>
+          <img src="" class="img-fluid" alt="">
+        </div>
+        
+        <div class="col-lg-7" data-aos="fade-right" style ="text-align:center";>
+          <img src="{% static 'assets/img/ffhq.PNG' %}" class="img-fluid" alt="">
+        </div>
+
+        <div class="content" style ="text-align:right";>
+          <br>
+          <h5>전 세계 사람들의 Data를 학습하여,<br><br>더욱 <span style="color:#18d26e">자연스럽게</span></h5>
+          <br><br><br>
+        </div>
+
+        <!-- <div class="col-lg-6" data-aos="fade-right" style ="text-align:center";>
+          <img src="assets/img/ads.png" class="img-fluid" alt="">
+        </div> -->
+
+        <!-- <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
+          <h3>UI/UX &amp; Graphic Designer</h3>
+          <p class="fst-italic">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+            magna aliqua.
+          </p>
+          <div class="row">
+            <div class="col-lg-6">
+              <ul>
+                <li><i class="bi bi-chevron-right"></i> <strong>Birthday:</strong> <span>1 May 1995</span></li>
+                <li><i class="bi bi-chevron-right"></i> <strong>Website:</strong> <span>www.example.com</span></li>
+                <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>+123 456 7890</span></li>
+                <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>New York, USA</span></li>
+              </ul>
+            </div>
+            <div class="col-lg-6">
+              <ul>
+                <li><i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span>30</span></li>
+                <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>Master</span></li>
+                <li><i class="bi bi-chevron-right"></i> <strong>PhEmailone:</strong> <span>email@example.com</span></li>
+                <li><i class="bi bi-chevron-right"></i> <strong>Freelance:</strong> <span>Available</span></li>
+              </ul>
+            </div>
+          </div>
+          <p>
+            Officiis eligendi itaque labore et dolorum mollitia officiis optio vero. Quisquam sunt adipisci omnis et ut. Nulla accusantium dolor incidunt officia tempore. Et eius omnis.
+            Cupiditate ut dicta maxime officiis quidem quia. Sed et consectetur qui quia repellendus itaque neque. Aliquid amet quidem ut quaerat cupiditate. Ab et eum qui repellendus omnis culpa magni laudantium dolores.
+          </p>
+        </div> -->
+      </div>
+
+    </div><!-- End About Me -->
+
+    <!-- ======= Counts ======= -->
+    <div class="counts container">
+
+      <div class="row">
+
+        <div class="col-lg-3 col-md-6">
+          <div class="count-box">
+            <i class="bi bi-cpu"></i>
+            <span data-purecounter-start="0" data-purecounter-end="4" data-purecounter-duration="3" class="purecounter"></span>
+            <p>개의 딥러닝 모델 기반</p>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 mt-5 mt-md-0">
+          <div class="count-box">
+            <i class="bi bi-person-lines-fill"></i>
+            <span data-purecounter-start="0" data-purecounter-end="5831" data-purecounter-duration="3" class="purecounter"></span>
+            <p>명의 헤어스타일을 분석</p>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
+          <div class="count-box">
+            <i class="bi bi-clock-history"></i>
+            <span data-purecounter-start="0" data-purecounter-end="864" data-purecounter-duration="3" class="purecounter"></span>
+            <p>Be:대면팀이 달려온 시간</p>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
+          <div class="count-box">
+            <i class="bi bi-scissors"></i>
+            <span data-purecounter-start="0" data-purecounter-end="6" data-purecounter-duration="3" class="purecounter"></span>
+            <p>개의 헤어스타일 수</p>
+          </div>
+        </div>
+        
+      </div>
+
+    </div><!-- End Counts -->
+
+    <!-- ======= Skills  ======= -->
+    <div class="skills container">
+
+      <div class="section-title">
+        <h2>Man's HairStyle Trend</h2>
+      </div>
+
+      <div class="row skills-content">
+
+        <div class="col-lg-3">
+          <p class="agestar" style="text-align : center"> 청소년 </p>
+
+          <div class="progress">
+            <span class="skill">쉐도우펌 <i class="val">25%</i></span>
+            <div class="progress-bar-wrap">
+              <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="background-color: #D8E9A8"></div>
+            </div>
+          </div>
+          
+          <div class="progress">
+            <span class="skill">일반 숏컷 <i class="val">16.7%</i></span>
+            <div class="progress-bar-wrap">
+              <div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="background-color: #4E9F3D"></div>
+            </div>
+          </div>
+
+          <div class="progress">
+            <span class="skill">댄디컷 <i class="val">8.3%</i></span>
+            <div class="progress-bar-wrap">
+              <div class="progress-bar" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="background-color: #1E5128"></div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="col-lg-3">
+          <p class="agestar" style="text-align : center"> 대학생 </p>
+          <div class="progress">
+            <span class="skill">쉐도우펌 <i class="val">23%</i></span>
+            <div class="progress-bar-wrap">
+              <div class="progress-bar" role="progressbar" aria-valuenow="69" aria-valuemin="0" aria-valuemax="100" style="background-color: #D8E9A8"></div>
+            </div>
+          </div>
+
+          <div class="progress">
+            <span class="skill">투블럭 댄디컷 <i class="val">22%</i></span>
+            <div class="progress-bar-wrap">
+              <div class="progress-bar" role="progressbar" aria-valuenow="66" aria-valuemin="0" aria-valuemax="100" style="background-color: #3d9f95"></div>
+            </div>
+          </div>
+
+          <div class="progress">
+            <span class="skill">애즈펌 <i class="val">12%</i></span>
+            <div class="progress-bar-wrap">
+              <div class="progress-bar" role="progressbar" aria-valuenow="36" aria-valuemin="0" aria-valuemax="100" style="background-color: #e2ad0b"></div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="col-lg-3">
+          <p class="agestar" style="text-align : center"> 사회초년생 </p>
+          <div class="progress">
+            <span class="skill">쉐도우펌 <i class="val">18%</i></span>
+            <div class="progress-bar-wrap">
+              <div class="progress-bar" role="progressbar" aria-valuenow="54" aria-valuemin="0" aria-valuemax="100" style="background-color: #D8E9A8"></div>
+            </div>
+          </div>
+
+          <div class="progress">
+            <span class="skill">댄디컷 <i class="val">15%</i></span>
+            <div class="progress-bar-wrap">
+              <div class="progress-bar" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="background-color: #1E5128"></div>
+            </div>
+          </div>
+
+          <div class="progress">
+            <span class="skill">투블럭 댄디컷 <i class="val">13%</i></span>
+            <div class="progress-bar-wrap">
+              <div class="progress-bar" role="progressbar" aria-valuenow="39" aria-valuemin="0" aria-valuemax="100" style="background-color: #3d9f95"></div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="col-lg-3">
+          <p class="agestar" style="text-align : center"> 중장년 </p>
+
+          <div class="progress">
+            <span class="skill">일반 숏컷 <i class="val">42%</i></span>
+            <div class="progress-bar-wrap">
+              <div class="progress-bar" role="progressbar" aria-valuenow="84" aria-valuemin="0" aria-valuemax="100" style="background-color: #4E9F3D"></div>
+            </div>
+          </div>
+
+          <div class="progress">
+            <span class="skill">댄디컷 <i class="val">10%</i></span>
+            <div class="progress-bar-wrap">
+              <div class="progress-bar" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="background-color: #1E5128"></div>
+            </div>
+          </div>
+
+          <div class="progress">
+            <span class="skill">애즈펌 <i class="val">4%</i></span>
+            <div class="progress-bar-wrap">
+              <div class="progress-bar" role="progressbar" aria-valuenow="8" aria-valuemin="0" aria-valuemax="100" style="background-color: #e2ad0b"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-me container"> 
+          <div class="row">
+            <div class="col-lg-12 pt-4 pt-lg-0 content" data-aos="fade-left">
+              <div class="row">
+                <div class="col-lg-6">
+                  <ul>
+                    <br><br>
+                    <li><i class="bi bi-chevron-right"></i> 청소년에게 가장 인기 있는 스타일 ::&nbsp<strong> 쉐도우펌</strong></li>
+                    <li><i class="bi bi-chevron-right"></i> 대학생에게 가장 인기 있는 스타일 ::&nbsp<strong> 쉐도우펌</strong></li>
+                    <li><i class="bi bi-chevron-right"></i> 사회초년생에게 가장 인기 있는 스타일 ::&nbsp<strong> 쉐도우펌</strong></li>
+                    <li><i class="bi bi-chevron-right"></i> 중장년에게 가장 인기 있는 스타일 ::&nbsp<strong> 일반 숏컷</strong></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <p>
+              <br>
+            여성 청소년에게 가장 인기있는 헤어스타일은 <strong>원랭스</strong>다. 다만, 대학생이 되며 순위에 다소 변동이 생긴다. 1위를 차지했던 원랭스의 비율이 1.5% 감소하며 3위로 내려앉았고, 허쉬가 7.7% 상승하며 2위로 뛰어올랐다. 특히 주목해야할 포인트는 새로운 스타일 <strong>레이어드</strong>의 등장이다. 청소년기에는 찾아볼 수 없었던 것에 반해 27.1%라는 큰 지지를 받으며 대학생이 가장 선호하는 스타일로 우뚝 섰다. 
+            <br><br>
+            레이어드의 뜨거운 인기는 대학생이 사회로 진출해서도 계속된다. 오히려 선호도가 2.8%나 상승하여 사회초년생의 선호도에서도 당당히 1위를 차지했다. 허쉬가 2.4%, 원랭스가 6.4% 감소했지만 레이어드컷은 오히려 선호도가 상승한 것이다. 여성도 남성과 마찬가지로 나이가 40대 중년에 접어들며 큰 변화를 맞이한다. 끝나지 않을 것 같았던 레이어드의 전성시대가 막을 내리고, 신흥강자 <strong>보브</strong>가 46%의 압도적인 지지를 받으며 1위로 군림한다. 보브 스타일이 이렇게까지 큰 인기를 끄는 이유는 무엇일까? 
+            <br><br>
+            중년여성들은 나이가 들면서 모발이 가늘어져 힘이 없어진다. 게다가 정수리 부분은 머리 숱이 점점 적어져 대체적으로 밋밋한 스트레이트 헤어보다는 볼륨있는 스타일을 선호한다. 그래서 세련된 단발의 보브컷은 중년여성들이 원하는 볼륨도 살려 주면서 깔끔하고 세련된 스타일을 연출해 인기가 많다. 이른바 '사모님'의 느낌이 물씬 나기 때문이다. 이런 보브의 인기와 더불어 대부분의 여성들이 단발 스타일을 선호하는 것을 확인할 수 있다.
+              <br><br><br><br>
+            </p>
+          </div>
+        </div>
+
+    </div><!-- End Skills -->
+
+    <div class="skills container">
+
+      <div class="section-title">
+        <h2>Woman's HairStyle Trend</h2>
+      </div>
+
+      <div class="row skills-content">
+
+        <div class="col-lg-3">
+          <p class="agestar" style="text-align : center"> 청소년 </p>
+          <div class="progress">
+            <span class="skill">원랭스 <i class="val">24.1%</i></span>
+            <div class="progress-bar-wrap">
+              <div class="progress-bar" role="progressbar" aria-valuenow="48" aria-valuemin="0" aria-valuemax="100" style="background-color: #D8E9A8"></div>
+            </div>
+          </div>
+
+          <div class="progress">
+            <span class="skill">플리츠 <i class="val">19%</i></span>
+            <div class="progress-bar-wrap">
+              <div class="progress-bar" role="progressbar" aria-valuenow="38" aria-valuemin="0" aria-valuemax="100" style="background-color: #1E5128"></div>
+            </div>
+          </div>
+
+          <div class="progress">
+            <span class="skill">허쉬 <i class="val">15.5%</i></span>
+            <div class="progress-bar-wrap">
+              <div class="progress-bar" role="progressbar" aria-valuenow="31" aria-valuemin="0" aria-valuemax="100" style="background-color: #3d9f95"></div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="col-lg-3">
+          <p class="agestar" style="text-align : center"> 대학생 </p>
+          <div class="progress">
+            <span class="skill">레이어드 <i class="val">27.1%</i></span>
+            <div class="progress-bar-wrap">
+              <div class="progress-bar" role="progressbar" aria-valuenow="54" aria-valuemin="0" aria-valuemax="100" style="background-color: #4E9F3D"></div>
+            </div>
+          </div>
+
+          <div class="progress">
+            <span class="skill">허쉬 <i class="val">23.2%</i></span>
+            <div class="progress-bar-wrap">
+              <div class="progress-bar" role="progressbar" aria-valuenow="46" aria-valuemin="0" aria-valuemax="100" style="background-color: #3d9f95"></div>
+            </div>
+          </div>
+
+          <div class="progress">
+            <span class="skill">원랭스 <i class="val">22.6%</i></span>
+            <div class="progress-bar-wrap">
+              <div class="progress-bar" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="background-color: #D8E9A8"></div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="col-lg-3">
+          <p class="agestar" style="text-align : center"> 사회초년생 </p>
+          <div class="progress">
+            <span class="skill">레이어드 <i class="val">30%</i></span>
+            <div class="progress-bar-wrap">
+              <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="background-color: #4E9F3D"></div>
+            </div>
+          </div>
+
+          <div class="progress">
+            <span class="skill">허쉬 <i class="val">20.8%</i></span>
+            <div class="progress-bar-wrap">
+              <div class="progress-bar" role="progressbar" aria-valuenow="41" aria-valuemin="0" aria-valuemax="100" style="background-color: #3d9f95"></div>
+            </div>
+          </div>
+
+          <div class="progress">
+            <span class="skill">원랭스 <i class="val">16.2%</i></span>
+            <div class="progress-bar-wrap">
+              <div class="progress-bar" role="progressbar" aria-valuenow="32" aria-valuemin="0" aria-valuemax="100" style="background-color: #D8E9A8"></div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="col-lg-3">  
+          <p class="agestar" style="text-align : center"> 중장년 </p>
+          <div class="progress">
+            <span class="skill">보브 <i class="val">46%</i></span>
+            <div class="progress-bar-wrap">
+              <div class="progress-bar" role="progressbar" aria-valuenow="92" aria-valuemin="0" aria-valuemax="100" style="background-color: #e2ad0b"></div>
+            </div>
+          </div>
+
+          <div class="progress">
+            <span class="skill">숏단발 <i class="val">24.8%</i></span>
+            <div class="progress-bar-wrap">
+              <div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="background-color: #1E5128"></div>
+            </div>
+          </div>
+
+          <div class="progress">
+            <span class="skill">허쉬 <i class="val">8.8%</i></span>
+            <div class="progress-bar-wrap">
+              <div class="progress-bar" role="progressbar" aria-valuenow="17" aria-valuemin="0" aria-valuemax="100" style="background-color: #3d9f95"></div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="about-me container"> 
+          <div class="row">
+            <div class="col-lg-12 pt-4 pt-lg-0 content" data-aos="fade-left">
+              <div class="row">
+                <div class="col-lg-6">
+                  <ul>
+                    <br><br>
+                    <li><i class="bi bi-chevron-right"></i> 청소년에게 가장 인기 있는 스타일 ::&nbsp<strong> 원랭스</strong></li>
+                    <li><i class="bi bi-chevron-right"></i> 대학생에게 가장 인기 있는 스타일 ::&nbsp<strong> 레이어드</strong></li>
+                    <li><i class="bi bi-chevron-right"></i> 사회초년생에게 가장 인기 있는 스타일 ::&nbsp<strong> 레이어드</strong></li>
+                    <li><i class="bi bi-chevron-right"></i> 중장년에게 가장 인기 있는 스타일 ::&nbsp<strong> 보브</strong></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        <div>
+          <p>
+            <br>
+            여성 청소년에게 가장 인기있는 헤어스타일은 <strong>원랭스</strong>다. 다만, 대학생이 되며 순위에 다소 변동이 생긴다. 1위를 차지했던 원랭스의 비율이 1.5% 감소하며 3위로 내려앉았고, 허쉬가 7.7% 상승하며 2위로 뛰어올랐다. 특히 주목해야할 포인트는 새로운 스타일 <strong>레이어드</strong>의 등장이다. 청소년기에는 찾아볼 수 없었던 것에 반해 27.1%라는 큰 지지를 받으며 대학생이 가장 선호하는 스타일로 우뚝 섰다. 
+            <br><br>
+            레이어드의 뜨거운 인기는 대학생이 사회로 진출해서도 계속된다. 오히려 선호도가 2.8%나 상승하여 사회초년생의 선호도에서도 당당히 1위를 차지했다. 허쉬가 2.4%, 원랭스가 6.4% 감소했지만 레이어드컷은 오히려 선호도가 상승한 것이다. 여성도 남성과 마찬가지로 나이가 40대 중년에 접어들며 큰 변화를 맞이한다. 끝나지 않을 것 같았던 레이어드의 전성시대가 막을 내리고, 신흥강자 <strong>보브</strong>가 46%의 압도적인 지지를 받으며 1위로 군림한다. 보브 스타일이 이렇게까지 큰 인기를 끄는 이유는 무엇일까? 
+            <br><br>
+            중년여성들은 나이가 들면서 모발이 가늘어져 힘이 없어진다. 게다가 정수리 부분은 머리 숱이 점점 적어져 대체적으로 밋밋한 스트레이트 헤어보다는 볼륨있는 스타일을 선호한다. 그래서 세련된 단발의 보브컷은 중년여성들이 원하는 볼륨도 살려 주면서 깔끔하고 세련된 스타일을 연출해 인기가 많다. 이른바 '사모님'의 느낌이 물씬 나기 때문이다. 이런 보브의 인기와 더불어 대부분의 여성들이 단발 스타일을 선호하는 것을 확인할 수 있다.
+            <br><br>
+          </p>
+        </div>
+
+        
+    
+        </div><!-- End About Me -->
+
+        
+      </div>
+
+    </div><!-- End Skills -->
+
+    <!-- ======= Testimonials ======= -->
+    <div class="testimonials container">
+
+      <div class="section-title">
+        <h2>Testimonials</h2>
+      </div>
+
+      <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
+        <div class="swiper-wrapper">
+
+          <div class="swiper-slide">
+            <div class="testimonial-item">
+              <p>
+                <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                얼마 전 취업에 성공해서 헤어스타일에 변화를 주고 싶었어요. 그런데 선뜻 미용실에 가기가 겁나더라고요... 비용도 비용인데 혹시 망하면 답도 없으니까... 그렇지만 이 서비스 덕분에 저한테 딱 맞는 스타일을 찾을 수가 있었어요!! 덕분에 원했던 스타일대로 잘 바꿨어요XD
+                <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+              </p>
+              <img src="{% static 'assets/img/testimonials/testimonials-2.jpg' %}" class="testimonial-img" alt="">
+              <h3>이지민</h3>
+              <h4>20대 / 사회초년생</h4>
+            </div>
+          </div><!-- End testimonial item -->
+          
+          <div class="swiper-slide">
+            <div class="testimonial-item">
+              <p>
+                <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                [한국인 10명 중 8명 "스타일의 완성은 헤어스타일"]
+                연령, 성별과 상관없이 한국인에게 헤어스타일은 큰 관심사 중에 하나라는 것이 설문 조사 결과를 통해 나타났다. 온라인 설문조사에 따르면 응답자의 84.5%는 "헤어는 전체적인 스타일에 중요한 요소"라고 답했다.
+                <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+              </p>
+              <img src="{% static 'assets/img/zdnet.png' %}" class="testimonial-img" alt="">
+              <h3>ZDnet KOREA</h3>
+              <h4>이나리 기자</h4>
+            </div>
+          </div><!-- End testimonial item -->
+
+          <div class="swiper-slide">
+            <div class="testimonial-item">
+              <p>
+                <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                저도 이제 스무살!! 성인이 됐답니다! 엄마가 대학가면 파마해준다고 했는데... 근데 솔직히 남자애들은 머리 스타일 이름도 모르잖아요 그냥 맨날 하던 커트나 하는거지. 제 친구들한테도 소개시켜주고 싶은 서비스에요. 얘들아 제발 머리 좀 손질하고 여친도 사귀고 그러자..
+                <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+              </p>
+              <img src="{% static 'assets/img/testimonials/20_mcgree.PNG' %}" class="testimonial-img" alt="">
+              <h3>한동현</h3>
+              <h4>20대 / 대학생</h4>
+            </div>
+          </div><!-- End testimonial item -->
+          
+          <div class="swiper-slide">
+            <div class="testimonial-item">
+              <p>
+                <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                [수능 짐벗은 고3 미용실 나들이]
+                “수능을 마친 수험생들은 파마를 하거나 긴 머리를 싹둑 자르는 등 눈에 띄는 변화를 주려고 하는 심리가 있는 것 같다. 말로는 설명하기 힘든 복잡한 머리 모양을 원하는 학생들은 아예 패션 잡지나 화보를 찢어 오는 경우도 존재한다.”
+                <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+              </p>
+              <img src="{% static 'assets/img/donga.png' %}" class="testimonial-img" alt="">
+              <h3>동아일보</h3>
+              <h4>우정렬 기자</h4>
+            </div>
+          </div><!-- End testimonial item -->
+
+          <div class="swiper-slide">
+            <div class="testimonial-item">
+              <p>
+                <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                나이 먹으니까 아무래도 예전에 했던 스타일이 안어울리더라고요. 이 나이 먹고 새로운 헤어스타일에 도전하는 것도 조금 겁나고.. 그런데 또 사람 마음이 다들 똑같은 뽀글펌 하기에는 싫은거 있죠? 그런 50대 동년배들을 위한 딱 맞는 서비스인것 같아요.
+                <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+              </p>
+              <img src="{% static 'assets/img/testimonials/50_msp.PNG' %}" class="testimonial-img" alt="">
+              <h3>봉미선</h3>
+              <h4>50대 / 주부</h4>
+            </div>
+          </div><!-- End testimonial item -->
+          
+          <div class="swiper-slide">
+            <div class="testimonial-item">
+              <p>
+                <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                [올여름 시도할 만한 Cool girl 헤어 BEST5]
+                드디어 마스크를 벗는 여름이다. 룩에 생기를 불어넣는 가장 쉽지만 용기가 필요한 방법은 아마도 헤어 살롱에서 이번 시즌 가장 트렌디한 헤어스타일에 도전하는 것일 거다.
+                특히, 발랄한 컬러에 과감하게 도전해보길 추천한다.
+                <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+              </p>
+              <img src="{% static 'assets/img/vogue.PNG' %}" class="testimonial-img" alt="">
+              <h3>VOGUE</h3>
+              <h4>Tish Weinstock</h4>
+            </div>
+          </div><!-- End testimonial item -->
+
+          <div class="swiper-slide">
+            <div class="testimonial-item">
+              <p>
+                <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                슬슬 결혼을 생각해야할 나이라 소개팅도 하고 그래요. 그런데 애프터가 항상 안들어와서...(눈물) 얼굴은 고칠 수 없으니 헤어스타일이라도 바꿔보고자 한 번 시도해봤어요. 그런데 생각보다 너무 자연스럽고 잘 어울려서 만족스러워요. 올해에는 결혼할 수..있겠죠? 
+                <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+              </p>
+              <img src="{% static 'assets/img/testimonials/30_joonstone.PNG' %}" class="testimonial-img" alt="">
+              <h3>최준석</h3>
+              <h4>30대 / 직장인</h4>
+            </div>
+          </div><!-- End testimonial item -->
+          
+          <div class="swiper-slide">
+            <div class="testimonial-item">
+              <p>
+                <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                [설렙 픽! 2022 헤어 트렌드] 
+                블런트 뱅, 레이어드 커트, 브레이드 헤어, 짙은 레드와 오렌지 컬러 염색과 같이 데일리로 연출 가능하면서도 과감함이 엿보이는 다채로운 헤어스타일이 유행할 예정.
+                무난한 스타일을 벗어나 새로운 스타일에 도전하면 어떨까?
+                <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+              </p>
+              <img src="{% static 'assets/img/hank.PNG' %}" class="testimonial-img" alt="">
+              <h3>한국경제</h3>
+              <h4>정혜진 기자</h4>
+            </div>
+          </div><!-- End testimonial item -->
+
+          <div class="swiper-slide">
+            <div class="testimonial-item">
+              <p>
+                <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                저는 민머리를 고수하고 있지만, 이 서비스를 통해서나마 여러 헤어스타일을 시도해볼 수 있었습니다. 젊을때는 이 스타일이 참 마음에 들었는데, 아무래도 나이가 들어가니 스타일을 바꿔볼까 싶네요. 언젠가는 저도 변환한 제 사진을 다운 받아 미용실에 가는 날이 오겠죠?
+                <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+              </p>
+              <img src="{% static 'assets/img/testimonials/testimonials-1.jpg' %}" class="testimonial-img" alt="">
+              <h3>박용만</h3>
+              <h4>50대 / 사업가</h4>
+            </div>
+          </div><!-- End testimonial item -->
+
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+
+      <div class="owl-carousel testimonials-carousel">
+
+      </div>
+
+    </div><!-- End Testimonials  -->
+
+  </section><!-- End About Section -->
+
+  <!-- ======= Services Section ======= -->
+  <section id="services" class="services">
+    <div class="container">
+      <div class="section-title">
+        <h2>Change your HairStyle</h2>
+        <p>헤어스타일 예측 서비스 with StyleCLIP</p>
+      </div>
+      <div class="custom2">
+        <form id='serviceForm' method="post" enctype="multipart/form-data" action="predictImage">
+          {% csrf_token %}
+          <div style ="text-align:center;  width:100%;";>
+            <table style="width:100%; margin-left:auto; margin-right:auto;">
+              <tr>
+                <td>
+                  <!-- <img src="{% static 'img/default_img.png' %}" alt='imagename' width="512px" height="512px" hspace="50"> -->
+                  <!-- <img src="원래 이미지 주소.jpg" onerror="this.onerror=null; this.src='대체 이미지 주소';"> -->
+                  <img src={{filePathName}} alt='imagename' width="512px" height="512px" onerror="this.onerror=null; this.src='{% static 'img/default_img.png' %}'">
+                  <!-- <img src="Default.jpg" onerror="this.src='Default.jpg'"> -->
+                  <figcaption>
+                    <h3>
+                    <br>
+                    BEFORE
+                    </h3>
+                  </figcaption>
+                </td>
+                <td>
+                  <!-- <img src="{% static 'img/default_img.png' %}" alt='resultimagename' width="512px" height="512px" hspace="50"> -->
+                  <img src={{resultFilePathName}} alt='resultimagename' width="512px" height="512px" onerror="this.onerror=null; this.src='{% static 'img/default_img.png' %}'">
+                  <figcaption>
+                    <h3>
+                    <br>
+                    AFTER
+                    </h3>
+                  </figcaption>
+                </td>
+              </tr>
+            </table>
+          </div>
+          <br>
+          <fieldset>
+            <div class='serviceDownload' style="text-align:center; width:100%;";>
+              <table style="width:20%; margin-left:auto; margin-right:auto;">
+                <tr style='text-align:center;'>
+                  <td width='150px'>
+                    <a href={{resultFilePathName}} download>Download</a>
+                  </td>
+                  <td width='150px'>
+                    <a href="/" class="smoothScroll">try again</a>          
+                  </td>
+                </tr>
+              </table>
+            </div>            
+          </fieldset>
+          <br>
+          <br>
+          <div class="section-title">
+            <label for="fname">
+              <h2>
+                HairStyle Modify
+              </h2>
+              <p>
+                원하시는 사진과 스타일을 선택해 주세요!
+              </p>
+            </label>
+          </div>
+          <ul>
+            <h5>
+              <li>PHOTO</li>
+            </h5>
+          </ul>        
+          <fieldset>
+          <!-- <input name="filePath" type="file"> -->
+            <div class="filebox" style="padding:25px;"> 
+              <label for="ex_file">Upload</label> 
+              <input name="filePath" type="file" id="ex_file" required> 
+            </div>
+          </fieldset>
+          <fieldset>
+            <ul>
+              <h5>
+                <li>STYLE</li>
+              </h5>
+            </ul>
+            <table width=70% style="margin-left:25px; margin-right:auto;">
+              <tr style='text-align:left'>
+                <td width=“10%”>
+                  <input type="radio" name="style" value="1" required> &nbsp;&nbsp;Blond hair
+                </td>
+                <td width=“10%”>
+                  <input type="radio" name="style" value="2" required> &nbsp;&nbsp;Quiff hair
+                </td>
+                <td width=“10%”>
+                  <input type="radio" name="style" value="3" required> &nbsp;&nbsp;Afro hair
+                </td>
+                <td width=“10%”>
+                  <input type="radio" name="style" value="4" required> &nbsp;&nbsp;Hip-top Fade
+                </td>
+                <td width=“10%”>
+                  <input type="radio" name="style" value="5" required> &nbsp;&nbsp;Bang hair
+                </td>
+                <td width=“10%”>
+                  <input type="radio" name="style" value="6" required> &nbsp;&nbsp;Black hair
+                </td>
+              </tr>
+            </table>
+          </fieldset>
+          <br>
+          <br>
+          <div style ="text-align:center";>
+            <input id="submit" type="submit" value="Submit" onclick="serviceSubmit()">
+          </div>
+          <br>
+          <br>          
+
+          <div class="section-title">
+            <h2>Precautions</h2>
+            <p>사용전 주의하세요!</p>
+          </div>
+          <br>
+          <div class='custom1' style ="text-align:center";>
+            <table style="margin-left: auto; margin-right: auto;">
+              <tr>
+                <td>
+                  <img src="{% static 'img/1.JPG' %}" alt='1' width="200px" height="200px" hspace="30">
+                  <figcaption>
+                    <br>거울에 비춰지는 인물,<br>시술자 및 특정상품정보가 있는 포스터 금지!!<br><br>
+                  </figcaption>
+                </td>
+                <td>
+                  <img src="{% static './img/2.JPG' %}" alt='2' width="200px" height="200px" hspace="30">
+                  <figcaption>
+                    <br>사람의 형상이 있는 물체 금지<br><br><br>
+                  </figcaption>
+                </td>
+                <td>
+                  <img src="{% static './img/3.JPG' %}" alt='3' width="200px" height="200px" hspace="30">
+                  <figcaption>
+                    <br>너무 어두운 조명 금지<br>원색이 너무 강한 매장 금지<br><br>
+                  </figcaption>
+                </td>
+                <td>  
+                  <img src="{% static './img/4.JPG' %}" alt='4' width="200px" height="200px" hspace="30">
+                  <figcaption>
+                    <br>그림이 그려진 벽지 금지<br>사람얼굴 인식될만한 피사체 담기는것 금지<br><br>
+                  </figcaption>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <img src="{% static './img/5.JPG' %}" alt='5' width="200px" height="200px" hspace="30">
+                  <figcaption>
+                    <br>프레임을 벗어나거나<br>꽉차는 사진 사용금지<br><br>
+                  </figcaption>
+                </td>
+                <td>
+                  <img src="{% static './img/6.JPG' %}" alt='6' width="200px" height="200px" hspace="30">
+                  <figcaption>
+                    <br>아웃포커싱 금지<br>초점 안 맞는것 금지<br>흔들려서 머리끝 Blur 금지
+                  </figcaption>
+                </td>
+                <td>
+                  <img src="{% static './img/7.JPG' %}" alt='6' width="200px" height="200px" hspace="30">
+                  <figcaption>
+                    <br>어플사용금지<br>뷰티보정 금지<br>(기본카메라어플권장)
+                  </figcaption>
+                </td>
+                <td>
+                  <img src="{% static './img/8.JPG' %}" alt='7' width="200px" height="200px" hspace="30">
+                  <figcaption>
+                    <br>플래시 금지<br>실내매장 핀조명 금지<br><br>
+                  </figcaption>
+                </td>
+              </tr>
+            </table>
+          </div>
+        <!-- {{filePathName}} -->
+        </form>
+        <br>
+      </div>
+    </div>
+  </section>
+  <!-- End Services Section -->
+
+  <!-- ======= Portfolio Section ======= -->
+  <section id="portfolio" class="portfolio">
+    <div class="container" style="font-family: 'Open Sans', sans-serif;">
+
+      <div class="section-title">
+        <h2>Reservation</h2>
+        <p>예약</p>
+      </div>
+
+      <div class="row" style="height:500px;">
+        <div class="col-lg-7" style="margin:auto;">
+          <div id="map" style="width:93%;height:400px; color: black;"></div>
+            <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=728db7193acef98e070ff4e0a33e730f"></script>
+            <script>
+              var mapContainer = document.getElementById('map'), // 지도를 표시할 div  
+                  mapOption = { 
+                      center: new kakao.maps.LatLng(37.5016, 127.0263), // 지도의 중심좌표
+                      level: 3 // 지도의 확대 레벨
+                  };
+              
+              var map = new kakao.maps.Map(mapContainer, mapOption); // 지도를 생성합니다
+               
+              // 마커를 표시할 위치와 내용을 가지고 있는 객체 배열입니다 
+              var positions = [
+                  {
+                      content: '<div>이철헤어커커 강남점</div>', 
+                      latlng: new kakao.maps.LatLng(37.5007, 127.0273)
+                  },
+                  {
+                      content: '<div>찹헤어 강남시티점</div>', 
+                      latlng: new kakao.maps.LatLng(37.5021, 127.0272)
+                  },
+                  {
+                      content: '<div>뮤사이 강남점</div>', 
+                      latlng: new kakao.maps.LatLng(37.5014, 127.0278)
+                  },
+                  {
+                      content: '<div>쿠헤어</div>', 
+                      latlng: new kakao.maps.LatLng(37.5009, 127.028)
+                  },
+                  {
+                      content: '<div>준오헤어 신논현역점</div>', 
+                      latlng: new kakao.maps.LatLng(37.5021, 127.0262)
+                  },
+                  {
+                      content: '<div>준오헤어 강남 2호점</div>', 
+                      latlng: new kakao.maps.LatLng(37.5025, 127.025)
+                  },
+                  {
+                      content: '<div>프랑크프로보 강남점</div>', 
+                      latlng: new kakao.maps.LatLng(37.502, 127.0252)
+                  },
+                  {
+                      content: '<div>리챠드프로헤어 강남교보점</div>', 
+                      latlng: new kakao.maps.LatLng(37.5026, 127.0249)
+                  },
+                  {
+                      content: '<div>메이봄헤어 강남본점</div>', 
+                      latlng: new kakao.maps.LatLng(37.5019, 127.0247)
+                  }
+              ];
+              
+              for (var i = 0; i < positions.length; i ++) {
+                  // 마커를 생성합니다
+                  var marker = new kakao.maps.Marker({
+                      map: map, // 마커를 표시할 지도
+                      position: positions[i].latlng // 마커의 위치
+                  });
+              
+                  // 마커에 표시할 인포윈도우를 생성합니다 
+                  var infowindow = new kakao.maps.InfoWindow({
+                      content: positions[i].content // 인포윈도우에 표시할 내용
+                  });
+              
+                  // 마커에 mouseover 이벤트와 mouseout 이벤트를 등록합니다
+                  // 이벤트 리스너로는 클로저를 만들어 등록합니다 
+                  // for문에서 클로저를 만들어 주지 않으면 마지막 마커에만 이벤트가 등록됩니다
+                  kakao.maps.event.addListener(marker, 'mouseover', makeOverListener(map, marker, infowindow));
+                  kakao.maps.event.addListener(marker, 'mouseout', makeOutListener(infowindow));
+              }
+              
+              // 인포윈도우를 표시하는 클로저를 만드는 함수입니다 
+              function makeOverListener(map, marker, infowindow) {
+                  return function() {
+                      infowindow.open(map, marker);
+                  };
+              }
+              
+              // 인포윈도우를 닫는 클로저를 만드는 함수입니다 
+              function makeOutListener(infowindow) {
+                  return function() {
+                      infowindow.close();
+                  };
+              }
+              </script>
+        </div>
+
+        <!-- justify-content: center;
+        align-items: center; -->
+
+        <div class="col-lg-5" style="margin:auto;">
+          <div class="row" style="font-family: 'Noto Sans KR', sans-serif;">
+            <label class="form-label" style="text-align:center;"><h4><strong>고객 정보</strong></h4></label>
+            <form>
+              <label class="form-label">이름</label>
+              <input type="text" class="form-control" style="background: transparent; color: #ffffff; border-color: #18d26e; border-radius: 25px; border-width:medium;">
+              <br>
+              <label class="form-label">연락처</label>
+              <input type="text" class="form-control" style="background: transparent; color: #ffffff; border-color: #18d26e; border-radius: 25px; border-width:medium;">
+              <br>
+              <label class="form-label">성별</label> &nbsp; &nbsp;
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                <label class="form-check-label" for="inlineRadio1">남성</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                <label class="form-check-label" for="inlineRadio2">여성</label>
+              </div>
+              <br><br>
+              <label class="form-label">시술메뉴 선택</label>
+              <select class="form-select" id="specificSizeSelect">
+                <option selected>시술 종류를 선택해주세요</option>
+                <option value="1">커트</option>
+                <option value="2">펌</option>
+                <option value="3">염색</option>
+                <option value="4">클리닉</option>
+                <option value="5">드라이</option>
+              </select>
+              <br>
+              <label class="form-label">시술날짜 선택 : &nbsp;</label>
+              <input type="date" value="2022-05-20" id="datepicker" style="background: transparent; color: rgba(255,255,255,0.8);">
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div class="row" style="font-family: 'Noto Sans KR', sans-serif; margin: 30px 0px 20px 0px;">
+        <div class="col-10 mx-auto">
+        <table class="table table-dark" >
+          <thead>
+            <tr>
+              <th>디자이너</th>
+              <th>시간</th>
+              <th>예약가능 여부</th>
+              <th>선택</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th>지민 수석디자이너</th>
+              <th>13:00</th>
+              <th>가능</th>
+              <th><input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1"></th>
+            </tr>
+            <tr>
+              <th>유진 디자이너</th>
+              <th>13:00</th>
+              <th>가능</th>
+              <th><input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1"></th>
+            </tr>
+            <tr>
+              <th>민정 원장</th>
+              <th>14:00</th>
+              <th style="color:red;">불가</th>
+              <th><input class="form-check-input" type="radio" name="flexRadioDisabled" id="flexRadioDisabled" disabled></th>
+            </tr>
+            <tr>
+              <th>은지 디자이너</th>
+              <th>14:00</th>
+              <th>가능</th>
+              <th><input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1"></th>
+            </tr>
+            <tr>
+              <th>지민 수석디자이너</th>
+              <th>14:00</th>
+              <th style="color:red;">불가</th>
+              <th><input class="form-check-input" type="radio" name="flexRadioDisabled" id="flexRadioDisabled" disabled></th>
+            </tr>
+            <tr>
+              <th>민정 원장</th>
+              <th>16:00</th>
+              <th style="color:red;">불가</th>
+              <th><input class="form-check-input" type="radio" name="flexRadioDisabled" id="flexRadioDisabled" disabled></th>
+            </tr>
+          </tbody>
+          
+        </table>
+        </div>
+      </div>
+
+      <div class="row">
+        <!-- <div class="d-grid gap-2 d-md-flex justify-content-md-end"> -->
+          <div class="d-grid gap-2 col-3 mx-auto" style="font-family: 'Noto Sans KR', sans-serif;">
+            <input type="submit" value="예약하기" id="rsvSubmit" onclick="rsvChk()">
+        </div>
+      </div>
+
+      
+      <!-- </div> -->
+
+    </div>
+  </section><!-- End Portfolio Section -->
+
+  <!-- ======= Contact Section ======= -->
+  <section id="contact" class="contact">
+    <div class="container">
+      
+      <div class="section-title">
+        <h2>Contact</h2>
+        <p>Contact Us</p>
+      </div>
+
+      <div class="row mt-2">        
+        <div class="col-md-6 mt-4 d-flex align-items-stretch">
+          <div class="info-box">
+            <div class="row">
+              <div class="col-lg-4" >
+                <img src="{% static 'assets/img/k-picture.png' %}" class="img-fluid" alt="">
+              </div>
+              <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
+                <h3>Kim SangHyun</h3>
+                  <div class="col-lg-12">
+                    <ul> 
+                      <i class="bi bi-phone"></i>  <span>010-4790-4099</span><br>
+                      <i class="bi bi-chat-left-dots"></i> <span>a72274099@gmail.com</span><br>
+                      <i class="bi bi-clipboard-check"></i> <span>FULL-STACK(AI & FE & BE)</span>
+                    </ul>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 mt-4  d-flex align-items-stretch">
+          <div class="info-box">
+            <div class="row">
+              <div class="col-lg-4" >
+                <img src="{% static 'assets/img/y-picture.png' %}" class="img-fluid" alt="">
+              </div>
+              <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
+                <h3>Yoon SeongWoo</h3>
+                  <div class="col-lg-30">
+                    <ul>
+                      <i class="bi bi-phone"></i> <span>010-7160-5407</span><br>
+                      <i class="bi bi-chat-left-dots"></i>  <span>tvar@naver.com</span><br>
+                      <i class="bi bi-clipboard-check"></i> <span>DA & FE sub</span>
+                    </ul>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 mt-4 d-flex align-items-stretch">
+          <div class="info-box">
+            <div class="row">
+              <div class="col-lg-4" >
+                <img src="{% static 'assets/img/l-picture.png' %}" class="img-fluid" alt="">
+              </div>
+              <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
+                <h3>Lee SeoHyun</h3>
+                  <div class="col-lg-30">
+                    <ul>
+                      <i class="bi bi-phone"></i> <span>010-9252-0916</span><br>
+                      <i class="bi bi-chat-left-dots"></i> <span>Love09164@naver.com</span><br>
+                      <i class="bi bi-clipboard-check"></i> <span>FE main</span>
+                    </ul>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-md-6 mt-4 d-flex align-items-stretch">
+          <div class="info-box">
+            <div class="row">
+              <div class="col-lg-4" >
+                <img src="{% static 'assets/img/j-picture1.png' %}" class="img-fluid" alt="">
+              </div>
+              <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
+                <h3>Jeong JaeWook</h3>
+                  <div class="col-lg-30">
+                    <ul>
+                      <i class="bi bi-phone"></i> <span>010-7554-5711</span><br>
+                      <i class="bi bi-chat-left-dots"></i> <span>epqmrhdiddl@naver.com</span><br>
+                      <i class="bi bi-clipboard-check"></i> <span>BE & FE sub</span>
+                    </ul>
+                  </div>
+              </div>
+            </div>
+          </div>
+      </div>
+
+      <form action="https://script.google.com/macros/s/AKfycbxdMJkJwQguCMSCmFse9hNZzQW56pfrASHmuyxwiiV5cM2lTQ4/exec" method="post" role="form" class="php-email-form mt-4">
+        <div class="row">
+          <div class="col-md-6 form-group">
+            <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+          </div>
+          <div class="col-md-6 form-group mt-3 mt-md-0">
+            <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+          </div>
+        </div>
+        <div class="form-group mt-3">
+          <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+        </div>
+        <div class="form-group mt-3">
+          <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+        </div>
+        <div class="my-3">
+          <div class="loading">Loading</div>
+          <div class="error-message"></div>
+          <div class="sent-message">Your message has been sent. Thank you!</div>
+        </div>
+        <div class="text-center"><button type="submit">Send Message</button></div>
+      </form>
+
+    </div>
+  </section>
+  <!-- End Contact Section -->
+
+  <!-- Vendor JS Files -->
+  <script src="{% static 'assets/vendor/purecounter/purecounter.js' %}"></script>
+  <script src="{% static 'assets/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/glightbox/js/glightbox.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/isotope-layout/isotope.pkgd.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/swiper/swiper-bundle.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/waypoints/noframework.waypoints.js' %}"></script>
+  <!-- <script src="{% static 'assets/vendor/php-email-form/validate.js' %}"></script> -->
+  
+  <!-- Template Main JS File -->
+  <script src="{% static 'assets/js/main.js' %}"></script>
+ 
+</body>
+
+</html>
