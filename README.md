@@ -6,7 +6,7 @@ Change Your Hairstyle (with StyleCLIP)
 
 # Arichitecture
 
-![Architecture](/img/architecture.png)  
+![Architecture](/img/architecture.JPG)  
 
 # Stack
 ![Stack](/img/stack.JPG)  
