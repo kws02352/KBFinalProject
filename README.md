@@ -9,7 +9,7 @@ Change Your Hairstyle (with StyleCLIP)
 ![Architecture](/img/architecture.png)  
 
 # Stack
-![Stack](/img/stack.png)  
+![Stack](/img/stack.JPG)  
 
 # Instance 환경
 - Ubuntu: 18.04
